@@ -1,0 +1,20 @@
+Line 26662 :
+scopeZoomRadius: {
+"1xscope": 28,
+"2xscope": 36,
+"4xscope": 48,
+"8xscope": 68,
+"15xscope": 104
+},
+
+Line 51803 :
+e.exports = {
+            Defs: N,
+            MinScale: .125,
+            MaxScale: 2.5,
+            oriToRad: r,
+            getBoundingCollider: o,
+            t: function(e, t) {
+                return e.sprite && e.sprite.visible && e.sprite.alpha < t
+            }
+        }
