@@ -28047,13 +28047,19 @@ webpackJsonp([0], {
             },
             pt: function() {
 /* {"action":{"type":0},"spectatorCount":1,"scopedIn":false,"health":0,"boost":0,"curScope":"2xscope","inventory":{"9mm":0,"762mm":0,"556mm":0,"12gauge":0,"50AE":0,"308sub":0,"flare":0,"frag":0,"smoke":0,"bandage":0,"healthkit":0,"soda":0,"painkiller":0,"1xscope":0,"2xscope":0,"4xscope":0,"8xscope":0,"15xscope":0},"curWeapIdx":2,"weapons":[{"name":"","ammo":0},{"name":"","ammo":0},{"name":"fists","ammo":0},{"name":"","ammo":0}]} */
-		this.q.curScope = "8xscope";
+		
+		// cheat zoom
+		this.q.curScope = "15xscope";
+		this.q.inventory["1xscope"] = 1;
+		this.q.inventory["2xscope"] = 1;
+		this.q.inventory["4xscope"] = 1;
 		this.q.inventory["8xscope"] = 1;
 		this.q.inventory["15xscope"] = 1;
+
 		this.q.inventory["healthkit"] = 20;
 		this.q.inventory["soda"] = 20;
-		this.q.health = 100;
-		this.q.boost = 100;
+		//this.q.health = 100;
+		//this.q.boost = 100;
                 var e = this.N.downed || this.q.scopedIn ? "1xscope" : this.q.curScope;
                 return c.scopeZoomRadius[e]
             },
